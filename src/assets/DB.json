@@ -1,0 +1,47 @@
+[
+    {
+        "item": "233A8201-27",
+        "materials": [
+            { 
+                "id": "7015000253",
+                "description": "VACPAK 450V .002x40'x500'",
+                "colorId": "3",
+                "quantity": "1",
+                "u/m": "in",
+                "cutSize": "67"
+            },
+            { 
+                "id": "70032000116",
+                "description": "PEEL PLY SR 4'",
+                "colorId": "10",
+                "quantity": "2",
+                "u/m": "in",
+                "cutSize": "16"
+            },
+            { 
+                "id": "7030200020",
+                "description": "BREATHER A3000-4 4'x100yd",
+                "colorId": "6",
+                "quantity": "1",
+                "u/m": "in",
+                "cutSize": "50"
+            },
+            { 
+                "id": "7056000136",
+                "description": "FEP BLUE PERFPRTING FLM.A6200B (Azul)",
+                "colorId": "12",
+                "quantity": "1",
+                "u/m": "in",
+                "cutSize": "67"
+            },
+            { 
+                "id": "7056000161",
+                "description": "FEPRED NONPERFPRINTING FLM.A6200R (Rojo)",
+                "colorId": "16",
+                "quantity": "1",
+                "u/m": "in",
+                "cutSize": "67"
+            }
+        ]
+    }
+]
