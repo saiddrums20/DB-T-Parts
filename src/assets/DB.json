@@ -7,7 +7,7 @@
                 "description": "VACPAK 450V .002x40'x500'",
                 "colorId": "3",
                 "quantity": "1",
-                "u/m": "in",
+                "metric": "in",
                 "cutSize": "67"
             },
             { 
@@ -15,7 +15,7 @@
                 "description": "PEEL PLY SR 4'",
                 "colorId": "10",
                 "quantity": "2",
-                "u/m": "in",
+                "metric": "in",
                 "cutSize": "16"
             },
             { 
@@ -23,7 +23,7 @@
                 "description": "BREATHER A3000-4 4'x100yd",
                 "colorId": "6",
                 "quantity": "1",
-                "u/m": "in",
+                "metric": "in",
                 "cutSize": "50"
             },
             { 
@@ -31,7 +31,7 @@
                 "description": "FEP BLUE PERFPRTING FLM.A6200B (Azul)",
                 "colorId": "12",
                 "quantity": "1",
-                "u/m": "in",
+                "metric": "in",
                 "cutSize": "67"
             },
             { 
@@ -39,8 +39,217 @@
                 "description": "FEPRED NONPERFPRINTING FLM.A6200R (Rojo)",
                 "colorId": "16",
                 "quantity": "1",
-                "u/m": "in",
+                "metric": "in",
                 "cutSize": "67"
+            }
+        ]
+    },
+    {
+        "item": "233A6302-42",
+        "materials": [
+            { 
+                "id": "7056000161",
+                "description": "FEPRED NONPERFPRINTING FLM.A6200R (Rojo)",
+                "colorId": "16",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "45"
+            },
+            { 
+                "id": "7056000136",
+                "description": "FEP BLUE PERFPRTING FLM.A6200B (Azul)",
+                "colorId": "12",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "45"
+            },
+            { 
+                "id": "7030010260",
+                "description": "BREATHER A3000-4 60'X100yd",
+                "colorId": "8",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "45"
+            },
+            { 
+                "id": "7015000253",
+                "description": "VACPAK 450V .002x40'x500'",
+                "colorId": "3",
+                "quantity": "2",
+                "metric": "in",
+                "cutSize": "45"
+            }
+        ]
+    },
+    {
+        "item": "232A1302-20",
+        "materials": [
+            { 
+                "id": "7056000161",
+                "description": "FEPRED NONPERFPRINTING FLM.A6200R (Rojo)",
+                "colorId": "16",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "70"
+            },
+            { 
+                "id": "7056000136",
+                "description": "FEP BLUE PERFPRTING FLM.A6200B (Azul)",
+                "colorId": "12",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "70"
+            },
+            { 
+                "id": "7030010260",
+                "description": "BREATHER A3000-4 60'X100yd",
+                "colorId": "8",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "60"
+            },
+            { 
+                "id": "7032000028",
+                "description": "PEEL PLY SR BLUE 29'",
+                "colorId": "11",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "43"
+            },
+            { 
+                "id": "7015000215",
+                "description": "BAGGING 450V .002x54'x500'",
+                "colorId": "4",
+                "quantity": "2",
+                "metric": "in",
+                "cutSize": "70"
+            }
+        ]
+    },
+    {
+        "item": "143A9404-4",
+        "materials": [
+            { 
+                "id": "7056000136",
+                "description": "FEP BLUE PERFPRTING FLM.A6200B (Azul)",
+                "colorId": "12",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "127"
+            },
+            { 
+                "id": "70032000116",
+                "description": " PEEL PLY SR 4'",
+                "colorId": "10",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "127"
+            },
+            { 
+                "id": "7030010260",
+                "description": "BREATHER A3000-4 60'X100yd",
+                "colorId": "8",
+                "quantity": "2",
+                "metric": "in",
+                "cutSize": "127"
+            },
+            { 
+                "id": "7015000215",
+                "description": "BAGGING 450V .002x54'x500'",
+                "colorId": "33",
+                "quantity": "2",
+                "metric": "in",
+                "cutSize": "14"
+            }
+        ]
+    },
+    {
+        "item": "453A1512-1",
+        "materials": [
+            { 
+                "id": "7056000136",
+                "description": "FEP BLUE PERFPRTING FLM.A6200B (Azul)",
+                "colorId": "12",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "25'"
+            },
+            { 
+                "id": "7056000161",
+                "description": "FEPRED NONPERFPRINTING FLM.A6200R (Rojo)",
+                "colorId": "16",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "25'"
+            },
+            { 
+                "id": "99-0000-0008",
+                "description": "SOCK, COTTON KNIT TUBING 15'",
+                "colorId": "25",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "35'"
+            },
+            { 
+                "id": "7015000044",
+                "description": "VACPAK 450V .002x27'x500'",
+                "colorId": "2",
+                "quantity": "2",
+                "metric": "in",
+                "cutSize": "35'"
+            },
+            { 
+                "id": "7032000028",
+                "description": "PEEL PLY SR BLUE 29'",
+                "colorId": "11",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "35'"
+            }
+        ]
+    },
+    {
+        "item": "214W2080-914K3",
+        "materials": [
+            { 
+                "id": "7015000044",
+                "description": "VACPAK 450V .002x27'x500'",
+                "colorId": "2",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "54"
+            },
+            { 
+                "id": "7056000136",
+                "description": "FEP BLUE PERFPRTING FLM.A6200B (Azul)",
+                "colorId": "12",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "52'"
+            },
+            { 
+                "id": "7056000161",
+                "description": "FEPRED NONPERFPRINTING FLM.A6200R (Rojo)",
+                "colorId": "16",
+                "quantity": "1",
+                "metric": "in",
+                "cutSize": "52'"
+            },
+            { 
+                "id": "7030010260",
+                "description": "BREATHER A3000-4 60'X100yd",
+                "colorId": "8",
+                "quantity": "2",
+                "metric": "in",
+                "cutSize": "54'"
+            },
+            { 
+                "id": "70032000116",
+                "description": "PEEL PLY SR 4'",
+                "colorId": "10",
+                "quantity": "2",
+                "metric": "in",
+                "cutSize": "48"
             }
         ]
     }

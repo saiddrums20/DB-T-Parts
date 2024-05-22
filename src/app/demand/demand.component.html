@@ -1,0 +1,215 @@
+<div *ngIf="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
+<div>
+    <main>
+        <div class="pt-6 px-4 mb-4">
+            <!--Nav-->
+            <div class="mb-4">
+                <nav class="flex mb-5">
+                    <ol class="items-center inline-flex">
+                        <li class="items-center inline-flex">
+                            <a class="items-center inline-flex">
+                            <svg class="w-5 h-5 mr-[.625rem]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                            Inicio
+                            </a>
+                        </li>
+                        <li class="ml-2 items-center inline-flex">
+                            <div class="items-center inline-flex">
+                            <svg class="bg-transparent text-stone-400 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                            <a class="items-center inline-flex ml-2">Demanda</a>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+                <h1 class="text-2xl leading-8 font-semibold text-[#111827]">Demanda</h1>
+            </div>
+
+            <!--Table-->
+            <div class="px-4">
+                <div class="p-8 mb-4 bg-white rounded-lg shadow">
+                    <div class="flex flex-col">
+                        <div class="rounded-lg overflow-x-auto">
+                            <div class="align-middle min-w-full inline-block">
+                                <div class="rounded-lg overflow-hidden shadow">
+                                    <table class="min-w-full">
+                                        <thead class="bg-[#f9fafb] border-b border-[#e5e7eb]">
+                                            <tr>
+                                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left"># Parte</th>
+                                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">PO</th>
+                                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">Fecha de PO</th>
+                                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">Estado de la Pieza</th>
+                                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">Comentario</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="bg-white">
+                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('233A8201-27')">
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
+                                                    233A8201-27
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    12345
+                                                </td>
+                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
+                                                    27 Ago, 2024
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    <span class="text-[#03543f] font-medium text-xs py-[0.125rem] px-[.625rem] bg-[#def7ec] rounded-[.375rem] mr-2">Terminado</span>
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('233A6302-42')">
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
+                                                    233A6302-42
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    98765
+                                                </td>
+                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
+                                                    28 Ago, 2024
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    <span class="text-green-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-green-100 rounded-[.375rem] mr-2">Terminado</span>
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('232A1302-20')">
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
+                                                    232A1302-20
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    65432
+                                                </td>
+                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
+                                                    29 Ago, 2024
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    <span class="text-blue-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-blue-100 rounded-[.375rem] mr-2">Re-Trabajo</span>
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    Ejemplo de comentario 1
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('143A9404-4')">
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
+                                                    143A9404-4
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    78912
+                                                </td>
+                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
+                                                    30 Ago, 2024
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    <span class="text-red-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-red-100 rounded-[.375rem] mr-2">Cancelado</span>
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('453A1512-1')">
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
+                                                    453A1512-1
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    96385
+                                                </td>
+                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
+                                                    31 Ago, 2024
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    <span class="text-orange-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-orange-100 rounded-[.375rem] mr-2">Proceso</span>
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('214W2080-914K3')">
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
+                                                    214W2080-914K3
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    74185
+                                                </td>
+                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
+                                                    1 Sept, 2024
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    <span class="text-yellow-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-yellow-100 rounded-[.375rem] mr-2">Espera</span>
+                                                </td>
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
+                                                    Ejemplo de comentario 2
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Details Modal-->
+            <div *ngIf="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
+                <div class="relative w-auto my-6 mx-auto max-w-6xl">
+                    <!--content-->
+                    <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                    <!--header-->
+                    <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                        <h3 class="text-3xl font-semibold">
+                        {{partDetail.item}}
+                        </h3>
+                        <button type="button" class="items-center text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                            <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17v-5h1.5a1.5 1.5 0 1 1 0 3H5m12 2v-5h2m-2 3h2M5 10V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1v6M5 19v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1M10 3v4a1 1 0 0 1-1 1H5m6 4v5h1.375A1.627 1.627 0 0 0 14 15.375v-1.75A1.627 1.627 0 0 0 12.375 12H11Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <!--body-->
+                    <table class="min-w-full">
+                        <thead class="bg-[#f9fafb] border-b border-[#e5e7eb]">
+                            <tr>
+                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">Material</th>
+                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">Descripción</th>
+                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">Color ID</th>
+                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">Cant.</th>
+                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">U/M</th>
+                                <th scope="col" class="p-4 text-[#6b7280] tracking-wider uppercase font-medium text-[0.75rem] text-left">Cut Size</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr *ngFor="let material of partDetail.materials">
+                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
+                                    {{material.id}}
+                                </td>
+                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
+                                    {{material.description}}
+                                </td>
+                                <td class="text-white text-sm p-4 whitespace-nowrap font-semibold text-center" [ngStyle]="{'background-color': getBackgroundColor(material.colorId)}">
+                                    {{material.colorId}}
+                                </td>
+                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold text-center">
+                                    {{material.quantity}}
+                                </td>
+                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold text-center">
+                                    {{material.metric}}
+                                </td>
+                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold text-center">
+                                    {{material.cutSize}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--footer-->
+                    <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                        <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" (click)="toggleModal('')">Regresar</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
