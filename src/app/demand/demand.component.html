@@ -41,106 +41,23 @@
                                             </tr>
                                         </thead>
                                         <tbody class="bg-white">
-                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('233A8201-27')">
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
-                                                    233A8201-27
+                                            <tr *ngFor="let demand of demands" class="hover:bg-slate-50">
+                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold cursor-pointer" (click)="toggleModal(demand.partNumber)">
+                                                    {{ demand.partNumber }}
                                                 </td>
                                                 <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    12345
+                                                    {{ demand.po }}
                                                 </td>
                                                 <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
-                                                    27 Ago, 2024
+                                                    {{ demand.date }}
                                                 </td>
                                                 <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    <span class="text-[#03543f] font-medium text-xs py-[0.125rem] px-[.625rem] bg-[#def7ec] rounded-[.375rem] mr-2">Terminado</span>
+                                                    <select [(ngModel)]="demand.status" [ngClass]="getStatusClass(demand.status)" class="cursor-pointer">
+                                                        <option *ngFor="let status of statuses" [ngValue]="status.value">{{ status.label }}</option>
+                                                    </select>
                                                 </td>
                                                 <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    
-                                                </td>
-                                            </tr>
-                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('233A6302-42')">
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
-                                                    233A6302-42
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    98765
-                                                </td>
-                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
-                                                    28 Ago, 2024
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    <span class="text-green-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-green-100 rounded-[.375rem] mr-2">Terminado</span>
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    
-                                                </td>
-                                            </tr>
-                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('232A1302-20')">
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
-                                                    232A1302-20
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    65432
-                                                </td>
-                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
-                                                    29 Ago, 2024
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    <span class="text-blue-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-blue-100 rounded-[.375rem] mr-2">Re-Trabajo</span>
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    Ejemplo de comentario 1
-                                                </td>
-                                            </tr>
-                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('143A9404-4')">
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
-                                                    143A9404-4
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    78912
-                                                </td>
-                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
-                                                    30 Ago, 2024
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    <span class="text-red-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-red-100 rounded-[.375rem] mr-2">Cancelado</span>
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    
-                                                </td>
-                                            </tr>
-                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('453A1512-1')">
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
-                                                    453A1512-1
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    96385
-                                                </td>
-                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
-                                                    31 Ago, 2024
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    <span class="text-orange-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-orange-100 rounded-[.375rem] mr-2">Proceso</span>
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    
-                                                </td>
-                                            </tr>
-                                            <tr class="hover:bg-slate-50 cursor-pointer" (click)="toggleModal('214W2080-914K3')">
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap font-semibold">
-                                                    214W2080-914K3
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    74185
-                                                </td>
-                                                <td class="text-[#6b7280] text-sm p-4 whitespace-nowrap">
-                                                    1 Sept, 2024
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    <span class="text-yellow-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-yellow-100 rounded-[.375rem] mr-2">Espera</span>
-                                                </td>
-                                                <td class="text-[#111827] text-sm p-4 whitespace-nowrap">
-                                                    Ejemplo de comentario 2
+                                                    {{ demand.comment }}
                                                 </td>
                                             </tr>
                                         </tbody>

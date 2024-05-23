@@ -1,5 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import data from "../../assets/DB.json";
+import demandsData from '../../assets/DB_demand.json';
+
+interface Demand {
+  partNumber: string;
+  po: string;
+  date: string;
+  status: string;
+  comment: string;
+}
 
 interface Part {
   item: string;
@@ -22,6 +31,7 @@ interface Material {
   styleUrls: ['./demand.component.scss'],
 })
 export class DemandComponent implements OnInit {
+  demands: Demand[] = demandsData;
   showModal: boolean = false;
   partDetail: any;
 
@@ -38,6 +48,39 @@ export class DemandComponent implements OnInit {
     '25': '#0f766e',
     '33': '#bef264',
   };
+
+  statuses = [
+    {
+      value: 'terminado',
+      label: 'Terminado',
+      class:
+        'text-[#03543f] font-medium text-xs py-[0.125rem] px-[.625rem] bg-[#def7ec] rounded-[.375rem] mr-2',
+    },
+    {
+      value: 'retrabajo',
+      label: 'Re-Trabajo',
+      class:
+        'text-blue-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-blue-100 rounded-[.375rem] mr-2',
+    },
+    {
+      value: 'cancelado',
+      label: 'Cancelado',
+      class:
+        'text-red-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-red-100 rounded-[.375rem] mr-2',
+    },
+    {
+      value: 'proceso',
+      label: 'Proceso',
+      class:
+        'text-orange-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-orange-100 rounded-[.375rem] mr-2',
+    },
+    {
+      value: 'espera',
+      label: 'Espera',
+      class:
+        'text-yellow-800 font-medium text-xs py-[0.125rem] px-[.625rem] bg-yellow-100 rounded-[.375rem] mr-2',
+    },
+  ];
 
   constructor() {
     this.partDetail = '';
@@ -63,5 +106,10 @@ export class DemandComponent implements OnInit {
 
   openPdf(pdfUrl: string): void {
     window.open(pdfUrl, '_blank');
+  }
+
+  getStatusClass(status: string): string {
+    const statusObj = this.statuses.find((s) => s.value === status);
+    return statusObj ? statusObj.class : '';
   }
 }
