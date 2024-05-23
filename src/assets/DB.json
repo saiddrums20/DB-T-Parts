@@ -1,6 +1,7 @@
 [
     {
         "item": "233A8201-27",
+        "pdf": "assets/pdf/SK-233A8201-27.pdf",
         "materials": [
             { 
                 "id": "7015000253",
@@ -46,6 +47,7 @@
     },
     {
         "item": "233A6302-42",
+        "pdf": "assets/pdf/SK-233A6302-42.pdf",
         "materials": [
             { 
                 "id": "7056000161",
@@ -83,6 +85,7 @@
     },
     {
         "item": "232A1302-20",
+        "pdf": "assets/pdf/SK-232A1302-20.pdf",
         "materials": [
             { 
                 "id": "7056000161",
@@ -128,6 +131,7 @@
     },
     {
         "item": "143A9404-4",
+        "pdf": "assets/pdf/SK-143A9404-4.pdf",
         "materials": [
             { 
                 "id": "7056000136",
@@ -165,6 +169,7 @@
     },
     {
         "item": "453A1512-1",
+        "pdf": "assets/pdf/SK-453A1512-1.pdf",
         "materials": [
             { 
                 "id": "7056000136",
@@ -210,6 +215,7 @@
     },
     {
         "item": "214W2080-914K3",
+        "pdf": "assets/pdf/SK-214W2080-914K3.pdf",
         "materials": [
             { 
                 "id": "7015000044",

@@ -3,6 +3,7 @@ import data from "../../assets/DB.json";
 
 interface Part {
   item: string;
+  pdf: string;
   materials: Material[];
 }
 
@@ -58,5 +59,9 @@ export class DemandComponent implements OnInit {
 
   getBackgroundColor(colorId: string): string {
     return this.colorMapping[colorId] || '#ffffff'; // Default to white if colorId not found
+  }
+
+  openPdf(pdfUrl: string): void {
+    window.open(pdfUrl, '_blank');
   }
 }
