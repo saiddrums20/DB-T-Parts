@@ -1,0 +1,44 @@
+[
+    {
+        "partNumber": "233A8201-27",
+        "po": "12345",
+        "date": "27 Ago, 2024",
+        "status": "terminado",
+        "comment": ""
+    },
+    {
+        "partNumber": "233A6302-42",
+        "po": "98765",
+        "date": "28 Ago, 2024",
+        "status": "terminado",
+        "comment": ""
+    },
+    {
+        "partNumber": "233A8201-27",
+        "po": "12345",
+        "date": "29 Ago, 2024",
+        "status": "retrabajo",
+        "comment": ""
+    },
+    {
+        "partNumber": "232A1302-20",
+        "po": "65432",
+        "date": "30 Ago, 2024",
+        "status": "cancelado",
+        "comment": "Ejemplo de comentario 1"
+    },
+    {
+        "partNumber": "453A1512-1",
+        "po": "96385",
+        "date": "31 Ago, 2024",
+        "status": "proceso",
+        "comment": ""
+    },
+    {
+        "partNumber": "214W2080-914K3",
+        "po": "74185",
+        "date": "1 Sept, 2024",
+        "status": "espera",
+        "comment": "Ejemplo de comentario 2"
+    }
+]
